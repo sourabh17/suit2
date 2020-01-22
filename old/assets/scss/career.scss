@@ -1,0 +1,113 @@
+
+$imagePath: "../img";
+
+/*== CAREER PAGE ==*/
+.career.innerbanner{ @extend .innerbanner; background-image:url("#{$imagePath}/career-bg.jpg"); background-position: 100% 50%; }
+section.our-values{ 
+	.col{
+		h5{ font-weight: 600; }
+		 @media(max-width: 576px){
+			    flex-basis: 100%
+		}
+	}
+}
+
+section.job-openings{ 
+	.box{ position:relative; width:100%; min-height: 300px; color:#333; /*background:url("#{$imagePath}/job-opening-bg.jpg")  center no-repeat;*/ background-size: cover;  border:2px solid #ddd;  overflow: hidden; display:flex; align-items:center; justify-content:center; 
+		@media(max-width: 767px){
+			   min-height: 230px;
+		}
+	.job-positions-container{ /*position:absolute; left: 10%; top: 20%; */ z-index: 1;  display: block; 
+			span{     background: $gray-300; padding: 4px 12px; margin: 0 10px 10px; border-radius: 8px; float: left; 
+					@media(max-width: 767px){
+						font-size:13px;     margin: 0 8px 8px;
+					}
+			}
+			h3{
+				@media(max-width: 767px){
+				    font-size: 1.2rem;
+				}
+			 }
+		}
+	.see-more-strip{ position:absolute; width:100%; bottom:-100px; padding:14px 10px; text-align: center; background-color: #ff9344; color:#fff;  transition:.5s ease; text-decoration: none;
+				@media(min-width: 767px){
+				    font-size: 1.1rem;
+				}
+				@media(max-width: 576px){
+					padding:10px;
+				}
+		}
+	}
+	.box:hover .see-more-strip{ bottom:0px;  }	
+}
+
+
+section.scriptuiters-say{  background-color: #fff; padding: 15px 0 2rem;
+	.carousel{ background-color: darken(white, 4%);
+		.carousel-inner .media-body{
+				h6{ color:$gray-600;}
+		}
+	}
+}
+
+
+
+/*== CAREER DETAILS ==*/
+header.career-detail a.nav-link{ color:#000;
+	@media(max-width: 767px){
+			color:#fff;
+		}
+}
+section.developer-details{     padding: 10px 0 1rem; 
+	@media(max-width: 576px){
+			font-size:15px;
+		}
+}
+
+
+/*JOB POSITION LEFT */
+.job-position{ 
+	span{     background: $gray-400; padding: 4px 12px; margin: 0 5px 10px; border-radius: 8px;  font-size: 13px;
+			@media(max-width: 767px){
+				font-size:13px;     margin: 0 8px 8px;
+			}
+		}
+}
+.responsibility-wrapper{ 
+	ul{     padding: 0 0 0 20px;
+		li{ color:#ff7624;     padding-left: 5px; margin-bottom: 14px; vertical-align: top; list-style: square; font-size: 19px;
+			span{  color:#333; font-size: 16px;
+					@media(max-width: 576px){
+						font-size:14px;
+					}
+			}
+		}
+	}
+}
+
+
+/*DEV FORM RIGHT*/
+.devform{ }
+.apply-position{ background-color: #fff; padding:0; 
+		@media(min-width: 767px){
+				min-height:500px;	text-align: right;
+		}
+}
+.devform p{ line-height: 1.8;  color:$gray-600; }
+.custom-file-input{ max-width: 165px; border:none; box-shadow: none;  cursor: pointer;     height: auto; line-height: 1;
+}
+.custom-file-label{     min-width: 175px; display: block;     right: inherit; border:none;   background-color: transparent;  padding: 0;  border:none; box-shadow: none;      margin-bottom: 0;
+	&:after{ content: "Attach CV or Resume" !important;  background-color: transparent; border-radius:0;  border:none;  color:#ff7624;  padding: 0; left: 0; }
+	&:focus{ border:none;  }
+} 
+.custom-file-input:focus ~ .custom-file-label::after, .custom-file-input:focus ~ .custom-file-label{ border:none; box-shadow: none;}
+.custom-file span{ color:$gray-500;     vertical-align: top;}
+section.developer-details{
+		
+}
+
+.texture{ @extend .heading;  background:url("#{$imagePath}/texture.png") center no-repeat;  min-height: 320px; background-position: right; background-size: 280px;  margin-bottom: 0;
+	@media(max-width: 767px){
+		 min-height: 200px; background-position: right; background-size: 180px;				
+	}
+}

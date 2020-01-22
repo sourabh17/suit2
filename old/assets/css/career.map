@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/career.css",
+	"sources": [
+		"../scss/career.scss"
+	],
+	"sourcesContent": [
+		"\r\nbody { margin: 0;  padding: 0;  font-family: 'Open Sans', sans-serif;  } \r\n\r\n$imagePath: \"../img\";\r\n\r\n/*== CAREER PAGE ==*/\r\n.career.innerbanner{ @extend .innerbanner; background-image:url(\"#{$imagePath}/career-bg.jpg\"); }\r\nsection.our-values{ \r\n\t.col{\r\n\t\t @media(max-width: 576px){\r\n\t\t\t    flex-basis: 100%\r\n\t\t}\r\n\t}\r\n}\r\n"
+	],
+	"mappings": ";AACA,AAAA,IAAI,CAAC;EAAE,MAAM,EAAE,CAAE;EAAG,OAAO,EAAE,CAAE;EAAG,WAAW,EAAE,uBAAwB;CAAK;;AAI5E,qBAAqB;;AACrB,AAAA,OAAO,AAAA,YAAY,CAAA;EAAwB,gBAAgB,EAAC,2BAAG;CAAmC;;AAG/F,MAAM,EAAL,SAAS,EAAE,KAAK;;EAFpB,AACC,OADM,AAAA,WAAW,CACjB,IAAI,CAAA;IAEE,UAAU,EAAE,IAChB;GACD",
+	"names": []
+}

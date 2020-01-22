@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/common.css",
+	"sources": [
+		"../scss/common.scss"
+	],
+	"sourcesContent": [
+		"@mixin navActive{\r\n\t\r\n}\r\n\r\n$imagePath: \"../img\";\r\n\r\n.overlay{ background: rgba(0,0,0,0.8); position: absolute; right: 0; top:0; left:0; bottom: 0;}\r\n\r\n\r\nheader{   position:relative;\r\n\tnav.navbar{\r\n\t\t\t\t@media(min-width: 768px){\r\n\t\t\t\t\t position:absolute; top:0; right:2%;\r\n\t\t\t\t}\r\n\t\t}\r\n\t.navbar-nav{  \r\n\t\t \r\n\t\t \r\n\t\t li{   \r\n\t\t \t@media(max-width: 767px){\r\n\t\t\t\t\t\r\n\t\t\t\t}\r\n\t\t\t a{ \r\n\t\t\t\t\r\n\t\t\t  }\r\n\t\t\t  &.active a{ @include navActive; }\r\n\t\t }\r\n\t}\r\n}"
+	],
+	"mappings": ";AAMA,AAAA,QAAQ,CAAA;EAAE,UAAU,EAAE,kBAAI;EAAa,QAAQ,EAAE,QAAS;EAAE,KAAK,EAAE,CAAE;EAAE,GAAG,EAAC,CAAE;EAAE,IAAI,EAAC,CAAE;EAAE,MAAM,EAAE,CAAE;CAAG;;;AAGrG,AAAA,MAAM,CAAA;EAAI,QAAQ,EAAC,QAAS;CAmB3B;;AAjBG,MAAM,EAAL,SAAS,EAAE,KAAK;;EAFrB,AACI,MADE,CACL,GAAG,AAAA,OAAO,CAAA;IAEL,QAAQ,EAAC,QAAS;IAAE,GAAG,EAAC,CAAE;IAAE,KAAK,EAAC,EAAG;GAExC",
+	"names": []
+}

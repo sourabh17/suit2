@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/stylesheet.css",
+	"sources": [
+		"../scss/stylesheet.scss"
+	],
+	"sourcesContent": [
+		"\r\nbody { margin: 0;  padding: 0;  font-family: 'Open Sans', sans-serif; } \r\n\r\n$imagePath: \"../img\";\r\n\r\n\r\n.homebanner{ background:url(\"#{$imagePath}/landing-bg.jpg\") center no-repeat; background-size:cover; height:100vh; width: 100%; position:relative; \r\n\timg{     z-index: 2;}\r\n}\r\n\r\nsection.establish-note{     \r\n\t\t padding: 6rem 0;\r\n\t\t @media(max-width: 767px){\r\n\t\t\t\tpadding: 3rem 0;\r\n\t\t\t}\r\n}\r\n\r\nsection.our-services{ padding:10px 0 5rem; }\r\n\r\nsection.industries{ background-color: darken(white, 4%); padding:10px 0 5rem; }\r\n\r\nsection.our-approch{ @extend section.our-services }\r\n\r\nsection.client-say{ @extend section.industries; \r\n\t.carousel{ padding: 35px 35px 70px; background-color: #fff; \r\n\t\t@media(min-width: 768px){\r\n\t\t\t    margin: auto;     width: 80%;\r\n\t\t}\r\n\t\t.carousel-inner{}\r\n\t}\r\n\t.carousel-indicators{     right: inherit;      bottom: 15px;\r\n\t\tli{ background-color: darken(white, 9%);  }\r\n\t\t.active{ background-color: darken(gray, 1%);  }\r\n\t}\r\n\t\r\n}\r\n\r\n"
+	],
+	"mappings": ";AACA,AAAA,IAAI,CAAC;EAAE,MAAM,EAAE,CAAE;EAAG,OAAO,EAAE,CAAE;EAAG,WAAW,EAAE,uBAAwB;CAAI;;;AAK3E,AAAA,WAAW,CAAA;EAAE,UAAU,EAAC,4BAAG,CAAiC,MAAM,CAAC,SAAS;EAAE,eAAe,EAAC,KAAM;EAAE,MAAM,EAAC,KAAM;EAAE,KAAK,EAAE,IAAK;EAAE,QAAQ,EAAC,QAAS;CAEpJ;;;AAFD,AACC,WADU,CACV,GAAG,CAAA;EAAM,OAAO,EAAE,CAAE;CAAG;;;AAGxB,AAAO,OAAA,AAAA,eAAe,CAAA;EACnB,OAAO,EAAE,MAAO;CAIlB;;AAHE,MAAM,EAAL,SAAS,EAAE,KAAK;;EAFpB,AAAO,OAAA,AAAA,eAAe,CAAA;IAGlB,OAAO,EAAE,MAAO;GAEnB;;;;AAED,AAAO,OAAA,AAAA,aAAa,EAIpB,AAJA,OAIO,AAAA,YAAY,CAJC;EAAE,OAAO,EAAC,WAAY;CAAI;;;AAE9C,AAAO,OAAA,AAAA,WAAW,EAIlB,AAJA,OAIO,AAAA,WAAW,CAJA;EAAE,gBAAgB,EAAE,UAAM;EAAa,OAAO,EAAC,WAAY;CAAI;;;AAIjF,AACC,OADM,AAAA,WAAW,CACjB,SAAS,CAAA;EAAE,OAAO,EAAE,cAAe;EAAE,gBAAgB,EAAE,IAAK;CAK3D;;AAJA,MAAM,EAAL,SAAS,EAAE,KAAK;;EAFnB,AACC,OADM,AAAA,WAAW,CACjB,SAAS,CAAA;IAEH,MAAM,EAAE,IAAK;IAAM,KAAK,EAAE,GAAI;GAGnC;;;;AANF,AAOC,OAPM,AAAA,WAAW,CAOjB,oBAAoB,CAAA;EAAM,KAAK,EAAE,OAAQ;EAAO,MAAM,EAAE,IAAK;CAG5D;;;AAVF,AAQE,OARK,AAAA,WAAW,CAOjB,oBAAoB,CACnB,EAAE,CAAA;EAAE,gBAAgB,EAAE,OAAM;CAAgB;;;AAR9C,AASE,OATK,AAAA,WAAW,CAOjB,oBAAoB,CAEnB,OAAO,CAAA;EAAE,gBAAgB,EAAE,OAAM;CAAe",
+	"names": []
+}

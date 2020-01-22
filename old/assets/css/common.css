@@ -1,0 +1,25 @@
+/* line 7, D:/Tanmay-OFC/PersonalWork/SaurabhLodh/Scriptuit/assets/scss/common.scss */
+.overlay {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/* line 10, D:/Tanmay-OFC/PersonalWork/SaurabhLodh/Scriptuit/assets/scss/common.scss */
+header {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  /* line 11, D:/Tanmay-OFC/PersonalWork/SaurabhLodh/Scriptuit/assets/scss/common.scss */
+  header nav.navbar {
+    position: absolute;
+    top: 0;
+    right: 2%;
+  }
+}
+
+/*# sourceMappingURL=../css/common.map */

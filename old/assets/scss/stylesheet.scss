@@ -1,0 +1,296 @@
+
+/*== Homepage ==*/
+.homebanner{ background:url("#{$imagePath}/landing-bg.jpg") center no-repeat; background-size:cover; height:100vh; width: 100%; position:relative; 
+	img{     z-index: 2;
+		@media(max-width: 576px){
+			max-width: 240px;
+		}
+	}
+	.more-btn{ position:absolute; left:42%; bottom:15px; z-index: 2; display:none; text-decoration: none; color:$white;
+		font-size: 1rem; text-align: center; font-weight: 100;
+		@media(max-width: 576px){
+			display:block;
+		}
+		i{ font-size: 2.5rem; line-height: 1; margin-top: -10px;}
+	}
+}
+
+section.short-note{     
+		 padding: 6rem 0;
+		 @media(max-width: 767px){
+				padding: 3rem 0;
+			}
+		p{
+			@media(min-width: 768px){
+				 font-size: 1.2rem; 
+			}
+		}
+}
+
+section.our-services{ padding:10px 0 5rem; }
+
+section.industries{ background-color: darken(white, 4%); padding:15px 0 5rem; 
+		.heading{ margin-bottom: -10px;}
+}
+
+section.our-approch{ @extend section.our-services }
+
+section.client-say{ @extend section.industries; 
+	.carousel{ padding: 40px 40px 70px; background-color: #fff;
+			@media(max-width: 767px){
+				padding: 40px 20px 70px;
+			} 
+		@media(min-width: 768px){
+			    margin: auto;     width: 80%;
+		}
+		.carousel-inner{
+			.media{
+				 @media(max-width: 767px){
+				 	    flex-direction: column;
+				 }
+				 img{ 
+					@media(max-width: 767px){
+				 	    margin:0 0 1.2rem 0;
+				 	}
+				 }
+			 }
+		}
+	}
+	.carousel-indicators{     right: inherit;      bottom: 15px;
+		li{ background-color: darken(white, 9%);  }
+		.active{ background-color: $gray-600;  }
+	}
+	
+}
+
+
+/*=== Our Services Page ===*/
+section.services-tabs{ padding:5rem 0 3rem;
+	@media(max-width: 767px){  padding:2rem 0 1rem; }
+
+	/*Vertical Tabs - left side Buttons */
+	.nav-pills {	border-right: 2px solid #eee; padding-right: 20px;  
+		@media(max-width: 767px){
+			 border:none;
+		}
+	}
+	.nav-link{ color:#333;  position: relative;	
+		@media(max-width: 767px){ font-size: 14px;}
+	}
+	section.services-tabs .nav-link:last-child {margin-bottom: 0;}
+	.nav-link.active{ color:#000; font-weight: 600; background-color: transparent;
+		@media(max-width: 767px){
+		    border-bottom: 3px solid #ff7624; border-radius: 0;
+		}
+	}
+	.nav-link.active::after{ 
+			content:"";    width: 4px; height: 45px; right: -23px; top: 0; position: absolute; background: #ff7624; 
+			@media(max-width: 767px){
+				display:none;
+			}
+	}
+
+	/*Right side content*/
+	.tab-content {  padding: 10px 20px 10px 40px; 
+		@media(max-width: 767px){
+			    padding: 25px 25px 10px; font-size: 14px;
+		}
+		h4{ font-weight: 600; 
+			@media(max-width: 767px){ font-size:1.2rem;} 
+		}
+		p{    font-family: 'Avenir-Light'; @media(min-width: 767px){ line-height: 1.6; }  }
+		.btn-wrapper{ position:absolute; bottom:0; right:25px; 
+		}
+	}
+}
+
+
+/*Technologies we use tabs*/
+section.technologies-used{
+	.nav-link{     border-radius: 0; color:#333;
+		@media(max-width: 576px){  font-size:14px;}
+		& .active{  background-color: #ff7624; color:$white;}
+	}
+	.tab-content {padding: 40px 20px 20px; }
+}
+
+
+
+
+/*== CLOUD PAGE ==*/
+.cloud.innerbanner{ @extend .innerbanner; background-image:url("#{$imagePath}/cloud-bg.jpg"); }
+.banner-clouds{ background:url("#{$imagePath}/banner-clouds.png") no-repeat; background-size: 100%; min-height: 44px; width:100%; left:0; bottom:0; z-index: 2; position:absolute; 
+	@media(max-width: 991px){
+			   background-size: cover;
+		}
+}
+
+section.cloud-offerings {  @extend section.our-services }
+section.cloud-offerings ul li{ list-style: none; margin: 0 -1px 0 0px; }
+section.cloud-offerings ul li:nth-child(3) {margin-left: -1px; }
+
+section.benefits{ background-color: #fff;
+	h5{ line-height: 1.3; font-size: 1.1rem;}
+}
+
+
+
+
+
+/*== TEAM PAGE ==*/
+.team.innerbanner{ @extend .innerbanner; background-image:url("#{$imagePath}/team-bg.jpg"); background-position: top; } 
+section.our-team{      padding: 5rem 0 5rem;
+	.media{ 
+		.media-body{ font-size: 15px; 
+				@media(max-width: 767px){
+			   		font-size: 14px; 
+				}	
+				@media(max-width: 576px){
+			  		font-size: 13px; 
+				}
+		}
+		img{
+				@media(max-width: 767px){
+			   		max-width:75px;
+				}	
+			}
+		h5{
+			i{ color:#0e76a8;     font-size: 1.8rem; margin-left: 12px;}
+		}
+		h6{ color:$gray-500;
+			@media(max-width: 767px){
+			   		font-size: 0.8rem;
+				}	
+		}
+	}
+
+
+	.block{    min-width: 340px; max-width: 340px; display: inline-block; position:relative; overflow: hidden; max-height: 320px; 
+		margin-bottom: 4rem;
+		@media(max-width: 576px){
+			 min-width: 280px; max-width: 280px; max-height: 275px;
+		}
+		img{ width:100%;}
+		i{ color:#0e76a8; position:absolute; top:15px; right:15px;  font-size: 2.3rem;     z-index: 10; margin-left: 12px;}
+		.name-strip {
+		    position: relative;
+		    margin-bottom: -70px;
+		    bottom: 95px;
+		    background: rgba(196, 196, 192, 0.87);
+		    padding: 6px 25px;
+		    display: inline-block;
+		    opacity:1;
+		    color:#444;
+		    transition:.5s ease;
+		    h3{      margin-bottom: 6px; font-size: 1.6rem; }
+		    h5{     margin-bottom: 0; font-size: 1.1rem;}
+		}
+		.info {
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    color: #fff;
+		    position: absolute;
+		    background: rgba(0,0,0,0.6);
+		    padding: 10px 14px;
+		    transition:.5s ease;
+		    opacity: 0;
+		    h3{    margin-bottom: 5px; font-size: 1.5rem; margin-top: 10px;}
+		    h5{     margin-bottom: 0; font-size: 1.1rem; }
+		    p{     text-align: left; margin: 5px 0; line-height: 1.3; 
+				@media(min-width: 768px){
+					    font-size: 1.1rem;
+				}
+		    }
+		}
+	    &:hover .info{ opacity:1;  }
+	    &:hover .name-strip{ opacity:0;  }
+	}
+}
+
+
+
+/*== CONTACT PAGE ==*/
+.contact.innerbanner{ @extend .innerbanner; background-image:url("#{$imagePath}/contact-bg.jpg"); background-position: 100% 85%; }
+.contact-form{     padding: 3.5rem 0 3rem;
+		.form-group{
+			margin-bottom: 2.3rem;
+		}
+		.form-control{ 
+			border:none; border-radius: 0px; border-bottom: 1px solid #ddd;	     background-color: transparent;
+			@media(max-width: 990px){
+				font-size:15px;
+			}	
+		}
+		& :focus{ border-color:#ff7624; box-shadow: none; }	
+ }
+
+.quick-links{ background: #f6f6f6;     padding: 40px 50px; 
+		@media(max-width: 990px){
+			   	margin-top:2rem;
+			   	padding:20px 30px;
+			}	
+	ul{ list-style: none;
+		li{ display:flex; align-items:center; margin-bottom: 1.8rem; 
+			a{  display:block; color:#ff7624;}
+			p{ line-height: 1; margin-bottom: 0;	}
+			i{ margin-right: 12px; color:$gray-800;}
+			address{ margin-top: -5px; margin-bottom: 0;}
+			
+		}
+		li:last-child{ margin-bottom: 10px;}
+	}
+ } 
+
+ .conversation-container{  padding:0 0 2rem;
+		.heading{ background:url("#{$imagePath}/heading-texture1.png") center no-repeat;  background-size: 140px;
+			h2{		font-size: 1.8rem;
+				@media(max-width: 576px){
+			   		    font-size: 1.3rem;
+				}
+			}	
+		}
+	 }
+
+
+
+
+
+
+/*== UX DESIGN PAGE ==*/
+.uxdesignbanner{ @extend .homebanner; 
+	 background:url("#{$imagePath}/uxdesign-bg.jpg") right top no-repeat; background-size: 1300px;
+	 @media (max-width: 1400px){
+	 		background-size: 1040px;
+	 }
+	 @media (max-width: 990px){
+	 	background-size: 620px;
+	 	background-position: top;
+	 }
+	 .heading{   position: absolute;
+	 	h2{ color:#333; text-align: center; line-height: 1; }
+	 	@media (min-width: 991px){
+	 		min-height: 250px; min-width: 250px; background-size: 100%;   top:35%; left: 10%;
+	 		h2{font-size: 4rem; }
+	 	}
+	 	@media (max-width: 990px){
+	 		top:30%; left: 5%;     min-height: 120px; min-width: 120px; background-size: 100%;
+	 		h2{font-size: 2rem; }
+	 	}
+	 	@media (max-width: 576px){
+			position:relative;   min-height: 140px; min-width: 140px; 
+	 	}
+	 }
+}
+
+
+.website-redesign-flow{  background:url("#{$imagePath}/redesign-diagram-bg.jpg") right top no-repeat; background-size: 115%; }
+
+.ux-studio nav.navbar{ 
+	@media (max-width: 767px){
+	 		width: 100%;
+		    position: absolute;
+		    top: 0;
+	 }
+}

@@ -1,0 +1,21 @@
+/* line 2, D:/Tanmay-OFC/PersonalWork/SaurabhLodh/Scriptuit-git/assets/scss/career.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*== CAREER PAGE ==*/
+/* line 7, D:/Tanmay-OFC/PersonalWork/SaurabhLodh/Scriptuit-git/assets/scss/career.scss */
+.career.innerbanner {
+  background-image: url("../img/career-bg.jpg");
+}
+
+@media (max-width: 576px) {
+  /* line 9, D:/Tanmay-OFC/PersonalWork/SaurabhLodh/Scriptuit-git/assets/scss/career.scss */
+  section.our-values .col {
+    flex-basis: 100%;
+  }
+}
+
+/*# sourceMappingURL=../css/career.map */
