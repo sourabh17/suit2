@@ -18,9 +18,6 @@ $imagePath: "../img";
 }
 .home-banner {background:url("#{$imagePath}/landing-bg.jpg") center -10px no-repeat; background-size:cover;}
 
-
-
-
 body { margin: 0 auto;  padding: 0;  
 	// font-family: 'Roboto', sans-serif;
 	// font-family: 'Didact Gothic', sans-serif;
@@ -34,7 +31,6 @@ body { margin: 0 auto;  padding: 0;
     line-height: 1.25;
 }
 
-$imagePath: "../img";
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 500;
 	line-height: 1.3;
@@ -98,20 +94,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	}	
 }
 
-
-/*Button common*/
-.btn-common{  background:transparent; border: 1px solid #ff7624; padding:8px;  border-radius: 0; color:#ff7624; text-decoration: none; min-height: 120px; position:relative; cursor: pointer;
-	background-size: 100px 100px; /* some initial size to get the slanted appearance */ 
-    background-position: -120px 100px; /* negative positioning to hide it initially */
-    background-repeat: no-repeat;
-    transition: all ease 0.5s;     max-width: 100px;
-    background-image: linear-gradient(to bottom, #e1e1e1 0%,#e1e1e1 50%,#e1e1e1 52%,#e1e1e1 100%);
-    display: inline-flex; justify-content:space-between; flex-direction:column;     min-width: 95px; align-items:inherit;
- }
-.btn-common:hover{ text-decoration: none; background-size: 100% 100%; /* 200% because gradient is colored only for 50% */
-  background-position: 0px 0px; /* bring it fully into view */ color:#ff7624;  }
-.btn-common1{ @extend .btn-common; background-color: #F36F37; color:#fff; background-image:  linear-gradient(to bottom, #e25500 0%,#e25500 100%);  }
-.btn-common1:hover{ color:#fff;  }
 
 
 
@@ -181,32 +163,6 @@ nav.navbar{
 }
 
 
-/*INNER BANNER - SERVICES PAGE */
-.innerbanner{ background:url("#{$imagePath}/services-bg.jpg") center no-repeat; background-size:cover; height:80vh; width: 100%; position:relative; 
-	.heading{ z-index: 2; position:relative;   background:url("#{$imagePath}/heading-texture1.png") center no-repeat; min-height: 200px; min-width: 220px;
-		h2{  color:#F36F37;
-			span{ color:#fff;}
-			@media(min-width: 767px){
-				 font-size: 2.5rem;
-			}
-		}
-		@media(min-width: 1400px){ 
-			min-height: 250px; min-width: 250px; background-size: 100%;
-		}
-	}
-	p{ position:relative; z-index: 2; color:$gray-300; 
-		@media(min-width: 767px){
-				max-width:75%;
-			}
-	}
-	img{     z-index: 2;
-		@media(max-width: 576px){
-			max-width: 240px;
-		}
-	}
-}
-
-
 /*SUBHEADER FOR INNER PAGES*/
 header.subheader{ 
 	nav.navbar{ 
@@ -247,7 +203,6 @@ footer{ background-color:#0d4a93; color: $white; padding:2rem 0 1rem 0; margin-t
 	}
 }
 
-footer.ux-studio{ margin-top: 0rem;  }
 
 
 .icn-xl {
