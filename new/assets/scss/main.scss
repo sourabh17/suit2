@@ -142,7 +142,7 @@ nav.navbar{
 			    padding: 10px 10rem;
 		}
 		@media(max-width: 768px){
-			 z-index:2; background:rgba(0, 0, 0, 0.7);
+			 z-index:2; background:rgba(0, 0, 0, 0.7) !important;
 		}
 }
 .navbar-brand{
