@@ -14,9 +14,17 @@ $imagePath: "../img";
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
+    @media (max-width: 768px){
+        height: 200px !important;
+        h3 {
+            margin: auto !important;
+            bottom: -2rem !important;
+            font-size: 100%;
+        }
+    }
 }
-.home-banner {background:url("#{$imagePath}/landing-bg.jpg") center -10px no-repeat; background-size:cover;}
+.home-banner {background:url("#{$imagePath}/landing-bg.jpg") center  no-repeat; background-size:cover;}
 
 body { margin: 0 auto;  padding: 0;  
 	// font-family: 'Roboto', sans-serif;
@@ -55,10 +63,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 			padding-top: 88px;
 		}
 		@media (max-width: 767px){
-	 		    font-size: 1.4rem;
+	 		    // font-size: 1.4rem;
 	 	}
 	 	@media (max-width: 576px){
-	 		    font-size: 1rem;
+	 		    // font-size: 1rem;
 	 	}
 	}
 	&::before{
@@ -92,6 +100,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 			font-size:1rem;
 		}
 	}	
+}
+
+.img-responsive {
+    max-width: 100%;
 }
 
 
@@ -274,10 +286,17 @@ footer{ background-color:#0d4a93; color: $white; padding:2rem 0 1rem 0; margin-t
     font-size: 3.25rem;
 }
 
+.btn-lg, .btn-group-lg>.btn {
+    padding: .5rem 2rem;
+    font-size: 110%;
+}
 
-.btn {
+.btn, a.btn {
     border-radius: 0;
-    border-width: 2px;
+    border-width: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    
     &.btn-outline-primary {
         color: #F36F37;
         border-color: #F36F37;
