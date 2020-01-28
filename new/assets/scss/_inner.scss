@@ -1,0 +1,48 @@
+.services-banner {background:url("../img/services-bg.jpg") center 0 no-repeat; background-size:cover; height: 450px !important; }
+
+section.our-services{ padding:1rem 0 0; }
+
+
+
+
+/*=== Our Services Page ===*/
+section.services-tabs{ padding:5rem 0 1rem;
+	@media(max-width: 767px){  padding:2rem 0 1rem; }
+
+	/*Vertical Tabs - left side Buttons */
+    .nav-pills {	border-right: 2px solid #eee; padding-right: 20px;  
+        .nav-link { margin-bottom: 1rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+		@media(max-width: 767px){
+             border:none;
+             .nav-link { 
+                &:last-child {
+                    margin-bottom: 1rem;
+                }
+            }
+		}
+	}
+    .nav-link{ color:#333;  position: relative;	
+        min-width: 333px;
+        &::after {
+            content:"";    width: 4px; height: 45px; right: -23px; top: 0; position: absolute; background: transparent; 
+        }
+		@media(max-width: 767px){ font-size: 14px; min-width: 25px; border-bottom: 3px solid transparent;}
+	}
+	section.services-tabs .nav-link:last-child {margin-bottom: 0;}
+    .nav-link.active{ color:#000;    background-color: transparent;
+        @media(max-width: 767px){
+		    border-bottom: 3px solid #ff7624; border-radius: 0;
+		}
+	}
+	.nav-link.active::after{ 
+			background: #F36F37; 
+            transition: all .3s ease;
+            @media(max-width: 767px){
+				display:none;
+			}
+	}
+}
