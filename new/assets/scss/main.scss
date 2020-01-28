@@ -375,3 +375,33 @@ footer.ux-studio{ margin-top: 0rem;  }
     max-height: 70px;
     margin:.5rem 1rem;
 }
+
+.horiz-tabs.nav-pills  {
+    .nav-link {
+        font-size: 1.125rem;
+        border-radius: 0;
+        background: #F9F9F9;
+        color: #0A0A0A;
+        padding: 1.125rem 1.75rem;
+        &:hover {
+            background: #eee;
+        }
+        &.active, &:focus, &:active {
+            color: #fff;
+            background: #0D4A93;
+        }
+    }
+    @media(max-width: 768px){
+        display: block !important;
+    }
+}
+.horz-tab-panel {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    .tech-logo {
+        max-height: 100px;
+        max-width: 300px;
+        margin: 1rem 1.5rem;
+    }
+}
