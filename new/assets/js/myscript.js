@@ -35,7 +35,7 @@ $(document).ready(function(){
           if(scroll > navht){
                $('nav').css({"background-color":"rgba(0,0,0,0.7)", "top":"0"})
            }else{
-               $('nav').css({"background-color":"rgba(0,0,0,0)", "top":"10px"})
+               $('nav').css({"background-color":"rgba(0,0,0,0)", "top":"0"})
            }
 
           if($('header').hasClass('logo-white')){

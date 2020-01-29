@@ -1,4 +1,9 @@
-.services-banner {background:url("../img/services-bg.jpg") center 0 no-repeat; background-size:cover; height: 450px !important; }
+.services-banner {background:url("../img/services-bg.jpg") center 0 no-repeat; background-size:cover; height: 455px !important; }
+.usecases-banner {background:url("../img/usecases-bg.png") center 0 no-repeat; background-size:cover; height: 455px !important; }
+.partners-banner {background:url("../img/partner-bg.jpg") center 0 no-repeat; background-size:cover; height: 455px !important; }
+.contact-banner {background:url("../img/contact-bg.jpg") center 0 no-repeat; background-size:cover; height: 455px !important; }
+.careers-banner {background:url("../img/career-bg.jpg") center 0 no-repeat; background-size:cover; height: 455px !important; }
+.intro-banner {background:url("../img/intro-bg.jpg") center 0 no-repeat; background-size:cover; height: 455px !important; }
 
 section.our-services{ padding:1rem 0 0; }
 
@@ -7,7 +12,7 @@ section.our-services{ padding:1rem 0 0; }
 
 /*=== Our Services Page ===*/
 section.services-tabs{ padding:5rem 0 1rem;
-	@media(max-width: 767px){  padding:2rem 0 1rem; }
+	@media(max-width: 768px){  padding:2rem 0 1rem; }
 
 	/*Vertical Tabs - left side Buttons */
     .nav-pills {	border-right: 2px solid #eee; padding-right: 20px;  
@@ -16,7 +21,7 @@ section.services-tabs{ padding:5rem 0 1rem;
                 margin-bottom: 0;
             }
         }
-		@media(max-width: 767px){
+		@media(max-width: 768px){
              border:none;
              .nav-link { 
                 &:last-child {
@@ -30,18 +35,18 @@ section.services-tabs{ padding:5rem 0 1rem;
         &::after {
             content:"";    width: 4px; height: 45px; right: -23px; top: 0; position: absolute; background: transparent; 
         }
-		@media(max-width: 767px){ font-size: 14px; min-width: 25px; border-bottom: 3px solid transparent;}
+		@media(max-width: 768px){ font-size: 1rem; min-width: 25px; background: #F9F9F9; margin-right: .5rem; margin-bottom: .5rem !important;}
 	}
 	section.services-tabs .nav-link:last-child {margin-bottom: 0;}
     .nav-link.active{ color:#000;    background-color: transparent;
-        @media(max-width: 767px){
-		    border-bottom: 3px solid #ff7624; border-radius: 0;
+        @media(max-width: 768px){
+		    background: #0D4A93; color: #fff; border-radius: 0;
 		}
 	}
 	.nav-link.active::after{ 
 			background: #F36F37; 
             transition: all .3s ease;
-            @media(max-width: 767px){
+            @media(max-width: 768px){
 				display:none;
 			}
 	}
@@ -50,8 +55,8 @@ section.services-tabs{ padding:5rem 0 1rem;
 
 /*== PARTNERS PAGE ==*/
 .cloud-computing{ padding:4rem 0 3rem; 
-    h2{ font-size: 54px; font-weight: normal; line-height: 1.4 }
-    .cloud-logo{ width:480px; height:425px; min-width: 480px; min-height: 425px; background-color: #f5f5f5; }
+    // h2{ font-size: 54px; font-weight: normal; line-height: 1.4 }
+    .cloud-logo{ width:440px; height:390px; min-width: 440px; min-height: 390px; background-color: #f5f5f5; }
 }
 
 .cloud-services{  padding:2rem 0 4rem; 
@@ -59,7 +64,7 @@ section.services-tabs{ padding:5rem 0 1rem;
 }
 
 .interested{ background-color: #f36f37; padding:3rem 0 0;
-    h2{font-size: 80px; font-weight: normal; color:$white; }
+    h2{font-size: 72px; font-weight: normal; color:$white; }
     a.btn-outline-primary{ color:$white; border: 4px solid; font-size: 30px;
         &:hover, &:focus{ background-color:#fff !important;  color: #F36F37; }
     }
@@ -81,5 +86,5 @@ section.services-tabs{ padding:5rem 0 1rem;
 }
 
 .btn.big{
-    font-size: 28px; border:4px solid;
+    // font-size: 28px; border:4px solid;
 }
